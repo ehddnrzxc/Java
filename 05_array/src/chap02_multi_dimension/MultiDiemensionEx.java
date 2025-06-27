@@ -1,4 +1,4 @@
-package chap02_multi_demension;
+package chap02_multi_dimension;
 
 public class MultiDiemensionEx {
 
