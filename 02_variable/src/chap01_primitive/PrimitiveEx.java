@@ -1,4 +1,4 @@
-package chap01_premitive;
+package chap01_primitive;
 
 public class PrimitiveEx {
 
