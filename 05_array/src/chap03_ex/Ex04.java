@@ -1,5 +1,7 @@
 package chap03_ex;
 
+import java.util.Arrays;
+
 public class Ex04 {
 
   public static void main(String[] args) {
@@ -17,7 +19,8 @@ public class Ex04 {
     int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8};
    
     for (int i = 0; i < numbers.length; i++) {
-      
+      System.out.println(Arrays.toString(numbers));
+      return;
     }
     
   }
