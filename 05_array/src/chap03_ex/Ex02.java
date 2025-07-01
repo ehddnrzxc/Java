@@ -8,6 +8,7 @@ public class Ex02 {
     
     int[] numbers = {42, 17, 93, 120, 117, 59, 24, 28, 39};
     
+    
   }
   
 }

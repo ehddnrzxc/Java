@@ -8,6 +8,10 @@ public class Ex01 {
     
     int[] numbers = {4, 7, 9, 12, 17, 19, 24, 28, 30};
         
+    
+    
+    
+    
   }
   
 }

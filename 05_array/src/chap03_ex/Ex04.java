@@ -15,6 +15,10 @@ public class Ex04 {
     //   numbers[i] --- numbers[numbers.length - 1 - i]
 
     int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8};
+   
+    for (int i = 0; i < numbers.length; i++) {
+      
+    }
     
   }
   
