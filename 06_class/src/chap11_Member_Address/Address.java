@@ -8,53 +8,16 @@ public class Address {
   private String roadAddr;  //---- 도로명주소
   private String detailAddr;  //-- 상세주소
   
-  
   public Address(String zipCode, String roadAddr, String detailAddr) {
     super();
     this.zipCode = zipCode;
     this.roadAddr = roadAddr;
     this.detailAddr = detailAddr;
   }
-
-
+  
   public void printInfo() {
     System.out.println("우편번호: " + zipCode);
-    System.out.println("도로명주소: "  + roadAddr);
-    System.out.println("상세주소: " + detailAddr);
+    System.out.println(roadAddr + " " + detailAddr);
   }
-  
-  
-  public String getZipCode() {
-    return zipCode;
-  }
-
-
-  public void setZipCode(String zipCode) {
-    this.zipCode = zipCode;
-  }
-
-
-  public String getRoadAddr() {
-    return roadAddr;
-  }
-
-
-  public void setRoadAddr(String roadAddr) {
-    this.roadAddr = roadAddr;
-  }
-
-
-  public String getDetailAddr() {
-    return detailAddr;
-  }
-
-
-  public void setDetailAddr(String detailAddr) {
-    this.detailAddr = detailAddr;
-  }
-  
-  
-  
-  
   
 }

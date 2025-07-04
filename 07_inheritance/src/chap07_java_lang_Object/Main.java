@@ -19,7 +19,7 @@ public class Main {
     // 오버라이드된 equals() 메소드 동작  
     System.out.println(car1.equals(car2));
     
-
+    
     System.out.println(car1);
     System.out.println(car2);
     
