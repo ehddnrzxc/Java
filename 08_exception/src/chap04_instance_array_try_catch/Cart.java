@@ -1,4 +1,4 @@
-      package chap04_instance_array_try_catch;
+package chap04_instance_array_try_catch;
 
 import javax.swing.JOptionPane;
 

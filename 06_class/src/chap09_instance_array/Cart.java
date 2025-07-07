@@ -1,4 +1,4 @@
-      package chap09_instance_array;
+package chap09_instance_array;
 
 import javax.swing.JOptionPane;
 
