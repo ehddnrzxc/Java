@@ -163,9 +163,9 @@ public class Main {
     
     // immutable();
 
-    // traversal();
+     traversal();
     
-    sort();
+    // sort();
     
     
   }
