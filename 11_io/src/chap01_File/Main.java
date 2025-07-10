@@ -71,7 +71,7 @@ public class Main {
     
   }
   
-  public static void deleteDirectoryTree(String pathname) {
+  public static void deleteDirectoryTree(String pathname) {  // recursive call (재귀 호출)
     
     // 실습. 파라미터로 전달된 디렉터리를 모두 삭제하세요.
     //       비어 있는 디렉터리만 삭제할 수 있으므로 아래 과정이 필요합니다.
@@ -79,13 +79,20 @@ public class Main {
     
     
     File dir = new File(pathname);  // 최초 호출 시 "D:/2025/07/10" 경로
+                                    // 다음 호출 시 "D:/2025/07" 경로
+                                    // 다음 호출 시 "D:/2025" 경로
+                                    // 다음 호출 시 "D: 경로(루트 경로로 인식: 부모 디렉터리가 없는 시점이 종료 시점)
+    
+    if (dir.getParentFile() == null) { // 부모 디렉터리가 없으면
+      return;
+    }
     
     dir.delete();                   // 최초 호출 시 "D:/2025/07/10" 삭제
+                                    // 다음 호출 시 "D:/2025/07" 삭제
+                                    // 다음 호출 시 "D:/2025" 삭제
+                                  
     
-    
-    
-    
-    
+    deleteDirectoryTree(dir.getParent());  // 상위 디렉터리 정보를 넘깁니다.
   }
   
   public static void information() {
