@@ -144,7 +144,7 @@ public class NaverOpenAPI {
     String value = sc.next();   // 공백 문자 없이 입력
     
     // 요청
-    String apiURL = "https://openapi.naver.com/v1/captcha/nkey?code=1&key=" + key + "&value" + value;  // ?code=1 부분은 사용자 입력값 검증입니다.
+    String apiURL = "https://openapi.naver.com/v1/captcha/nkey?code=1&key=" + key + "&value=" + value;  // ?code=1 부분은 사용자 입력값 검증입니다.
     URL url = new URL(apiURL);
     HttpURLConnection con = (HttpURLConnection) url.openConnection();
     con.setRequestMethod("GET");
@@ -169,7 +169,7 @@ public class NaverOpenAPI {
     Gson gson = new Gson();
     ApiResopnse response = gson.fromJson(sb.toString(), ApiResopnse.class);
     System.out.println("검증결과: " + response.isResult());
-    System.out.println("입력시간: " + response.getResopnseTime() + "s");
+    System.out.println("입력시간: " + response.getResponseTime() + "s");
     
     in.close();
     con.disconnect();
