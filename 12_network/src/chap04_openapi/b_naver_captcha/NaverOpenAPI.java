@@ -140,11 +140,11 @@ public class NaverOpenAPI {
     
     // 사용자 입력
     Scanner sc = new Scanner(System.in);
-    System.out.println("보안 문자를 입력하세요. >>>");
+    System.out.println("보안문자를 입력하세요 >>> ");
     String value = sc.next();   // 공백 문자 없이 입력
     
     // 요청
-    String apiURL = "https://openapi.naver.com/v1/captcha/nkey?code=1&key=" + key + "&value=" + value;  // ?code=1 부분은 사용자 입력값 검증입니다.
+    String apiURL = "https://openapi.naver.com/v1/captcha/nkey?code=1&key=" + key + "&value" + value;  // ?code=1 부분은 사용자 입력값 검증입니다.
     URL url = new URL(apiURL);
     HttpURLConnection con = (HttpURLConnection) url.openConnection();
     con.setRequestMethod("GET");
